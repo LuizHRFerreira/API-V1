@@ -1,0 +1,27 @@
+[tool.black]
+line-length = 88
+target-version = ["py312"]
+
+[tool.ruff]
+line-length = 88
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "project.settings"
+python_files = ["tests.py", "test_*.py", "*_tests.py"]
+addopts = "-ra"
+
+[tool.mypy]
+python_version = "3.12"
+ignore_missing_imports = true
+warn_unused_ignores = true
+warn_redundant_casts = true
+warn_unused_configs = true
+check_untyped_defs = true
+exclude = ["migrations/"]
+
+[tool.bandit]
+exclude_dirs = ["tests", "venv", ".venv"]
