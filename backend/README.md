@@ -1,18 +1,3 @@
-# Guia completo de desenvolvimento com TDD
-
-Este guia explica **passo a passo** como desenvolver neste projeto usando **TDD (Test Driven Development)**.
-
-A ideia é que qualquer pessoa do time consiga olhar este documento e saber exatamente:
-
-- onde criar cada arquivo
-- como organizar as pastas
-- onde colocar os testes
-- qual comando rodar
-- o que esperar em cada etapa
-- o que fazer depois
-
----
-
 # Visão geral do fluxo
 
 O fluxo padrão de desenvolvimento neste projeto é:
